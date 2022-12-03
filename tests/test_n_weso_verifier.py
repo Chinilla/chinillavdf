@@ -1,6 +1,6 @@
 import secrets
 
-from chiavdf import (
+from chinillavdf import (
     create_discriminant,
     prove,
     verify_wesolowski,
