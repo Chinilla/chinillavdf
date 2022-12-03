@@ -246,8 +246,8 @@ class BuildExt(build_ext):
 if platform.system() == "Windows":
     setup(
         name="chinillavdf",
-        author="Mariano Sorgente",
-        author_email="mariano@chinilla.net",
+        author="Edward Teach",
+        author_email="edward@chinilla.com",
         description="Chinilla vdf verification (wraps C++)",
         license="Apache License",
         python_requires=">=3.7",
@@ -264,8 +264,8 @@ else:
 
     setup(
         name="chinillavdf",
-        author="Florin Chirica",
-        author_email="florin@chinilla.net",
+        author="Edward Teach",
+        author_email="edward@chinilla.com",
         description="Chinilla vdf verification (wraps C++)",
         license="Apache License",
         python_requires=">=3.7",
