@@ -99,6 +99,9 @@ jobs:
               major-dot-minor: '3.7'
               cibw-build: 'cp37-*'
               matrix: '3.7'
+              major-dot-minor: '3.8'
+              cibw-build: 'cp38-*'
+              matrix: '3.8'
             arch:
               name: ARM
               matrix: arm
@@ -177,7 +180,7 @@ jobs:
         CIBW_TEST_COMMAND: py.test -v {project}/tests
         CIBW_PRERELEASE_PYTHONS: True
       run:
-        pipx run --spec='cibuildwheel==2.9.0' cibuildwheel --output-dir dist 2>&1
+        pipx run --spec='cibuildwheel==2.11.1' cibuildwheel --output-dir dist 2>&1
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
